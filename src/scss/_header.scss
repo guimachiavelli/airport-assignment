@@ -1,0 +1,26 @@
+$header-height: baselines(17.5);
+
+.site-header {
+    @include background-texture;
+    position: fixed;
+    height: $header-height;
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    background-color: colour(menu);
+    box-shadow: 0 0 50px 0 colour(menu-shadow);
+}
+
+.site-header__section--logo {
+    flex: 1 1 percentage(233/1280);
+}
+
+.site-header__section--nav {
+    flex: 1 1 percentage(907/1280);
+}
+
+.site-header__section--aside {
+    flex: 1 1 percentage(140/1280);
+}

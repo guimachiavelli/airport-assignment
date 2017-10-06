@@ -1,0 +1,13 @@
+.logo {
+    background-color: rgba(colour(body), 0.5);
+    height: $header-height;
+    vertical-align: middle;
+}
+
+.logo__text {
+    font-size: 36px;
+    font-family: Value, serif;
+    line-height: $header-height;
+    text-align: center;
+}
+

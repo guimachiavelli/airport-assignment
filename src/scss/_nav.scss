@@ -1,0 +1,53 @@
+.site-nav {
+    padding: 0 baselines(7.5);
+}
+
+.nav-items {
+    display: flex;
+    height: $header-height;
+}
+
+.nav-item {
+    flex: 1 1;
+    align-self: center;
+}
+
+.nav-item__link {
+    display: block;
+}
+
+.nav-item__text {
+    font-weight: 700;
+    font-size: font-size(menu-normal);
+    line-height: 1;
+
+    &::after {
+        content: $i-arrow-right;
+        font-family: icomoon;
+        position: absolute;
+        color: colour(underline);
+        font-size: 32px;
+        font-weight: 400;
+        line-height: font-size(menu-normal);
+        opacity: 0;
+    }
+
+    .nav-item__link:hover &::after {
+        opacity: 1;
+    }
+
+    .nav-item--active & {
+        border-bottom: 1px solid colour(underline);
+    }
+}
+
+.nav-item__catchline {
+    margin-top: baselines(0.5);
+    padding-top: baselines(0.5);
+    display: block;
+    font-size: font-size(menu-catchline);
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+

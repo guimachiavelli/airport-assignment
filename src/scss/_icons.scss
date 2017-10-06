@@ -1,0 +1,72 @@
+$icomoon-font-path: '../assets/fonts/icon' !default;
+
+$i-arrow-diagonal: "\e900";
+$i-arrow-right: "\e901";
+$i-instagram: "\e902";
+$i-play: "\e903";
+$i-social-fb-alt: "\e904";
+$i-social-fb: "\e905";
+$i-social-mail: "\e906";
+$i-social-twitter: "\e90a";
+
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('#{$icomoon-font-path}/icomoon.ttf?8ie4oq') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?8ie4oq') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?8ie4oq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.i-arrow-diagonal {
+  &:before {
+    content: $i-arrow-diagonal;
+  }
+}
+.i-arrow-right {
+  &:before {
+    content: $i-arrow-right;
+  }
+}
+.i-instagram {
+  &:before {
+    content: $i-instagram;
+  }
+}
+.i-play {
+  &:before {
+    content: $i-play;
+  }
+}
+.i-social-fb-alt {
+  &:before {
+    content: $i-social-fb-alt;
+  }
+}
+.i-social-fb {
+  &:before {
+    content: $i-social-fb;
+  }
+}
+.i-social-mail {
+  &:before {
+    content: $i-social-mail;
+  }
+}
+.i-social-twitter {
+  &:before {
+    content: $i-social-twitter;
+  }
+}

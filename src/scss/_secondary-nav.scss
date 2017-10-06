@@ -1,0 +1,31 @@
+.side-link {
+    @include background-texture;
+    height: $header-height/2;
+    line-height: $header-height/2;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.side-link--dark {
+    background-color: colour(dark-beige);
+}
+
+.side-link--light {
+    background-color: colour(light-beige);
+}
+
+.side-link__link {
+    color: colour(body);
+    font-weight: 700;
+    font-size: font-size(menu-retracted);
+
+    &::after {
+        content: $i-arrow-diagonal;
+        font-family: icomoon;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: font-size(menu-retracted);
+        position: relative;
+        top: 5px;
+    }
+}

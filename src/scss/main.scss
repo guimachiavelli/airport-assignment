@@ -1,5 +1,6 @@
 @import '../../node_modules/reset-css/_reset.scss';
 @import '_fonts.scss';
+@import '_icons.scss';
 @import '_vars.scss';
 @import '_mixins.scss';
 @import '_functions.scss';
@@ -11,9 +12,17 @@ body {
     font-family: Cadiz;
     font-size: font-size(p);
     line-height: leading(p);
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
     color: colour(white);
     text-decoration: none;
 }
+
+@import '_header.scss';
+@import '_logo.scss';
+@import '_nav.scss';
+@import '_secondary-nav.scss';
+
+@import '_content.scss';
