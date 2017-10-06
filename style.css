@@ -1,0 +1,110 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: Cadiz;
+  src: url(fonts/CadizWeb-Regular.woff);
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: Cadiz;
+  src: url(fonts/CadizWeb-RegularItalic.woff);
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Cadiz;
+  src: url(fonts/CadizWeb-Bold.woff);
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: Value;
+  src: url(fonts/value-serif.ttf);
+  font-weight: 400;
+  font-style: normal; }
+
+/* 
+# font-sizes from design
+menu-retracted: 16px,
+menu-normal: 20px,
+menu-catchline: 12px,
+h1: 90px,
+standfirst: 28px,
+h2: 44px,
+p: 19px,
+h3: 19px,
+blockquote: 55px,
+slider-button: 16px,
+slider-caption: 14px,
+statistic-number: 140px,
+statistic-percentage: 70px,
+footer-heading: 22px,
+footer-text: 18px,
+*/
+/* 
+# line-height from design
+h1: 102px,
+standfirst: 38px,
+h2: 48px,
+p: 27px,
+h3: 27px,
+blockquote: 76px,
+newsletter-cta: 24px,
+footer-text: 36px,
+*/
+body {
+  background-image: url(imgs/bg-texture.png);
+  background-repeat: repeat;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: Cadiz;
+  font-size: 19px;
+  line-height: 28px; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
