@@ -44,8 +44,13 @@ module.exports = options => {
         },
 
         {
+          test: /\.(jpg|jpeg|png|gif)$/,
+          loader: 'file-loader?name=imgs/[name].[ext]',
+        },
+
+        {
           test: /\.(eot|svg|ttf|woff|woff2)$/,
-          loader: 'file-loader?name=public/fonts/[name].[ext]',
+          loader: 'file-loader?name=fonts/[name].[ext]',
         },
       ],
     },

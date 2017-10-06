@@ -1,0 +1,45 @@
+@function baselines($lines) {
+    @return $lines * $baseline;
+}
+
+@function font-size($size) {
+    @return map-get($font-sizes, $size);
+}
+
+@function leading($size) {
+    @return map-get($line-heights, $size);
+}
+
+@function colour($colour) {
+    @return map-get($colours, $colour);
+}
+
+@mixin animation($animation) {
+    -ms-animation: $animation;
+    -webkit-animation: $animation;
+    -moz-animation: $animation;
+    -o-animation: $animation;
+    animation: $animation;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-ms-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
