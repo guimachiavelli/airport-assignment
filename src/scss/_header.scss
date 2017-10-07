@@ -3,6 +3,7 @@ $header-height: baselines(17.5);
 .site-header {
     @include background-texture;
     position: fixed;
+    z-index: 1;
     height: $header-height;
     top: 0;
     display: flex;

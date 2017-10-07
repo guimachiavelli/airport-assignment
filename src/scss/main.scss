@@ -20,9 +20,29 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 @import '_header.scss';
 @import '_logo.scss';
 @import '_nav.scss';
 @import '_secondary-nav.scss';
 
 @import '_content.scss';
+@import '_article.scss';
+@import '_slider.scss';
+@import '_statistics.scss';
+
+
+@import '_footer.scss';
+@import '_newsletter.scss'

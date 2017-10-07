@@ -1,0 +1,18 @@
+.statistics {
+    background-color: colour(light-beige);
+    margin-left: $article-content-padding-left * -1;
+    padding-left: $article-content-padding-left;
+}
+
+.statistic {
+    display: flex;
+    max-width: 980px;
+}
+
+.statistic__figure {
+    flex: 1 1 30%;
+}
+
+.statistic__caption {
+    flex: 3 auto 70%;
+}

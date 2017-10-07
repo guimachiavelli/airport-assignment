@@ -2,7 +2,7 @@ $icomoon-font-path: '../assets/fonts/icon' !default;
 
 $i-arrow-diagonal: "\e900";
 $i-arrow-right: "\e901";
-$i-instagram: "\e902";
+$i-social-instagram: "\e902";
 $i-play: "\e903";
 $i-social-fb-alt: "\e904";
 $i-social-fb: "\e905";
@@ -40,9 +40,9 @@ i {
     content: $i-arrow-right;
   }
 }
-.i-instagram {
+.i-social-instagram {
   &:before {
-    content: $i-instagram;
+    content: $i-social-instagram;
   }
 }
 .i-play {
