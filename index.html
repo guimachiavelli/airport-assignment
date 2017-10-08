@@ -90,34 +90,42 @@
               Title of a news article which is kinda long
             </h1>
 
-            <div class="article__standfirst">
-              <p>Praesent venenatis metus at tortor pulvinar varius. In some communities and schools, women have played a key role in getting a white ribbon effort off the ground. Many women have chosen to financially support our work because they believe we are tackling violence at its roots.</p>
+            <div class="article__meta">
+              <div class="article__standfirst">
+                <p>Praesent venenatis metus at tortor pulvinar varius. In some communities and schools, women have played a key role in getting a white ribbon effort off the ground. Many women have chosen to financially support our work because they believe we are tackling violence at its roots.</p>
+              </div>
+
+              <aside class="article__social">
+                <ul class="social-networks">
+                  <li class="social-network">
+                    <a href="#" class="social-network__link">
+                      <i class="i i-social-fb-alt"></i>
+                      <span class="social-network__text">
+                        share
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="social-network">
+                    <a href="#" class="social-network__link">
+                      <i class="i i-social-twitter"></i>
+                      <span class="social-network__text">
+                        tweet
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="social-network">
+                    <a href="#" class="social-network__link">
+                      <i class="i i-social-mail"></i>
+                      <span class="social-network__text">
+                        mail
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </aside>
             </div>
-
-            <aside class="article__social">
-              <ul class="social-networks">
-                <li class="social-network">
-                  <a href="social-network__link">
-                    <i class="i i--facebook"></i>
-                    share
-                  </a>
-                </li>
-
-                <li class="social-network">
-                  <a href="social-network__link">
-                    <i class="i i--twitter"></i>
-                    tweet
-                  </a>
-                </li>
-
-                <li class="social-network">
-                  <a href="social-network__link">
-                    <i class="i i--mail"></i>
-                    mail
-                  </a>
-                </li>
-              </ul>
-            </aside>
           </header>
 
           <section class="article__section">
@@ -128,39 +136,51 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id malesuada massa, eget hendrerit magna. Quisque dictum mi et ligula vestibulum, sed facilisis tellus mattis. Praesent id eleifend diam, at rutrum arcu. Aliquam euismod augue ultricies, posuere augue non, scelerisque lorem. Morbi vestibulum metus ac odio consectetur fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus vitae sapien id libero lacinia sollicitudin eget laoreet dolor. Duis non nunc lorem. Suspendisse potenti.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id malesuada massa, eget hendrerit magna. Quisque dictum mi et ligula vestibulum, sed facilisis tellus mattis. Praesent id eleifend diam, at rutrum arcugsollicitudin eget laoreet.</p>
             <blockquote class="article__quote">
-              Many women have chosen to financially support our work. 
+              <p>
+                <span class="article__quote-line">
+                  Many women have
+                </span>
+                <span class="article__quote-line">
+                  chosen to financially 
+                </span>
+                <span class="article__quote-line">
+                  support our work.
+                </span>
+              </p>
             </blockquote>
             <p>Aliquam euismod augue ultricies, posuere augue non, scelerisque lorem. Morbi vestibulum metus ac odio consectetur fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus vitae sapien id libero lacinia sollicitudin eget laoreet dolor. Duis non nunc lorem. Suspendisse potenti.</p>
           </section>
 
           <section class="article__section">
-            <div class="slider">
-              <ul class="slider-items">
-                <li class="slider-item">
-                  <figure class="slider-item__figure">
-                    <img class="slider-item__image" src="#" alt="">
-                    <figcaption class="slider-item__caption">The insight industry has so many tools at its disposable these days that it’s not unreasonable to expect.</figcaption>
-                  </figure>
-                </li>
+            <div class="slider-container">
+              <div class="slider">
+                <ul class="slider-items">
+                  <li class="slider-item">
+                    <figure class="slider-item__figure">
+                      <img class="slider-item__image" src="imgs/placeholder-1.jpg" alt="">
+                      <figcaption class="slider-item__caption">The insight industry has so many tools at its disposable these days that it’s not unreasonable to expect.</figcaption>
+                    </figure>
+                  </li>
 
-                <li class="slider-item">
-                  <figure class="slider-item__figure">
-                    <img class="slider-item__image" src="#" alt="">
-                    <figcaption class="slider-item__caption">The insight industry has so many tools at its disposable these days that it’s not unreasonable to expect.</figcaption>
-                  </figure>
-                </li>
+                  <li class="slider-item slider-item--active">
+                    <figure class="slider-item__figure">
+                      <img class="slider-item__image" src="imgs/placeholder-2.jpg" alt="">
+                      <figcaption class="slider-item__caption">The insight industry has so many tools at its disposable these days that it’s not unreasonable to expect.</figcaption>
+                    </figure>
+                  </li>
 
-                <li class="slider-item">
-                  <figure class="slider-item__figure">
-                    <img class="slider-item__image" src="#" alt="">
-                    <figcaption class="slider-item__caption">The insight industry has so many tools at its disposable these days that it’s not unreasonable to expect.</figcaption>
-                  </figure>
-                </li>
-              </ul>
+                  <li class="slider-item">
+                    <figure class="slider-item__figure">
+                      <img class="slider-item__image" src="imgs/placeholder-3.jpg" alt="">
+                      <figcaption class="slider-item__caption">The insight industry has so many tools at its disposable these days that it’s not unreasonable to expect.</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
 
               <nav class="slider__controls">
                 <button class="slider__button" type="button">Next</button>
-                <figure class="slider__counter"></figure>
+                <figure class="slider__counter">1</figure>
               </nav>
             </div>
           </section>
@@ -205,8 +225,10 @@
           </section>
 
           <section class="article__section article__section--ruler">
-            <figure class="article__video">
-              <video src="#" autoplay poster="video-thumb.jpg"></video>
+            <figure class="player">
+              <h2 class="player__title">Our video</h2>
+              <video class="player__video" src="https://player.vimeo.com/external/217632282.hd.mp4?s=0e76c54745bd8fa8d98b02f5df044e07246c7058&profile_id=119" poster="imgs/video-thumb.jpg"></video>
+              <button type="button" class="player__button">Play</button>
             </figure>
 
             <p>In some communities and schools, women have played a key role in getting a white ribbon effort off the ground. Many women have chosen to financially support our work because they believe we are tackling violence at its roots. We acknowledge and greatly appreciate their support while believing that men must take on the task of building the campaign.</p>
@@ -217,21 +239,19 @@
       <footer class="site-footer">
         <div class="newsletter">
           <div class="newsletter__cta">
-            <p>
+            <p class="newsletter__text">
               Want to hear more about our work?<br>
               Sign up to our newsletter.
             </p>
           </div>
 
           <form class="newsletter__form">
-            <input class="newsletter__input" type="email">
+            <input class="newsletter__input" placeholder="Your e-mail address" type="email">
             <button class="newsletter__submit" type="submit">Subscribe</button>
           </form>
         </div>
 
         <div class="footer-sections">
-
-
 
           <section class="footer-section">
             <h2 class="footer-section__heading">Site map</h2>
