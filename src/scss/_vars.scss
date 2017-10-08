@@ -1,8 +1,6 @@
-$main-font: 'Gza Seminegra', 'Times', 'Times New Roman', serif;
-
 $colours: (
     menu: #2b2c29,
-    menu-shadow: rgba(#000, 0.05),
+    menu-shadow: rgba(#000, 0.15),
     white: #fff,
     body: #1e1e1e,
     dark-beige: #a5aa8b,
@@ -25,6 +23,8 @@ $font-sizes: (
     h3: 19px,
     blockquote: $base-font-size * 14, // 56 (!= 55)
 
+    social-text: 11px,
+
     menu-retracted: $base-font-size * 4, // 16
     menu-normal: $base-font-size * 5, // 20
     menu-catchline: $base-font-size * 3, // 12
@@ -34,6 +34,8 @@ $font-sizes: (
 
     statistic-number: $base-font-size * 35, // 140
     statistic-percentage: $base-font-size * 17.5, // 70
+
+    player-title: $base-font-size * 10, // 40
 
     footer-heading: $base-font-size * 5.5, // 22
     footer-text: $base-font-size * 4.5, // 18
@@ -48,6 +50,7 @@ $line-heights: (
     blockquote: $baseline * 9.5, // 76
     newsletter-cta: $baseline * 3, // 24
     footer-text: $baseline * 4.5, // 36
+    slider-caption: 17px, // 17
 );
 
 /* 

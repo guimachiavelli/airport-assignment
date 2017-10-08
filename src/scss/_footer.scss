@@ -4,14 +4,29 @@ $footer-padding: percentage(211/1280);
     display: flex;
     width: 100%;
     flex-flow: row wrap;
-    padding: 0 $footer-padding;
+    justify-content: space-between;
+    padding: baselines(14) $footer-padding;
 }
 
 .footer-section {
-    flex: 1 1;
+    width: 30%;
+    margin-right: 3%;
 }
 
-.newsletter {
-    padding: 0 $footer-padding;
-    background-color: colour(light-beige);
+.footer-section__heading {
+    font-size: font-size(footer-heading);
+    font-family: Value, serif;
+    line-height: leading(footer-text);
+}
+
+.sitemap {
+}
+
+.sitemap__item {
+    display: block;
+}
+
+.sitemap__link {
+    font-size: font-size(footer-text);
+    line-height: leading(footer-text);
 }

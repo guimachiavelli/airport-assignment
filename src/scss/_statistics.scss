@@ -7,12 +7,48 @@
 .statistic {
     display: flex;
     max-width: 980px;
+    padding: baselines(9.5) 0;
+
+    &:first-child {
+        border-bottom: 1px solid colour(menu);
+    }
 }
 
 .statistic__figure {
     flex: 1 1 30%;
+    font-size: font-size(statistic-percentage);
+    font-family: Value, serif;
+    color: colour(content);
+}
+
+.statistic__number {
+    font-size: font-size(statistic-number);
+    line-height: 1;
 }
 
 .statistic__caption {
     flex: 3 auto 70%;
+    color: colour(content);
+
+}
+
+.statistic__title {
+    color: colour(content);
+}
+
+.statistic__link {
+    display: inline-block;
+    background: colour(dark-beige);
+    border-radius: 1px;
+    padding: 0.25em 0.5em;
+
+    &::after {
+        content: $i-arrow-right;
+        font-family: icomoon;
+        font-size: 32px;
+        line-height: 0;
+        position: relative;
+        top: 7px;
+        padding-left: 0.25em;
+    }
 }

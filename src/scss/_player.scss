@@ -1,0 +1,40 @@
+$player-padding-top: baselines(9);
+
+.player {
+    position: relative;
+    max-width: $article-paragraph-width;
+    border-top: 1px solid colour(light-beige);
+    padding-top: $player-padding-top;
+    margin-bottom: baselines(9);
+}
+
+.player__title {
+    position: absolute;
+    top: $player-padding-top;
+    font-size: font-size(player-title);
+    font-family: Value, serif;
+    padding-left: 0.8em;
+    padding-top: 0.5em;
+}
+
+.player__video {
+    width: 100%;
+}
+
+.player__button {
+    font-size: 0;
+    position: absolute;
+    background: 0;
+    border: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    &::after {
+        content: $i-play;
+        font-family: icomoon;
+        font-size: 160px;
+        color: #fff;
+    }
+}

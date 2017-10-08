@@ -1,11 +1,69 @@
 .newsletter {
     display: flex;
+    padding: baselines(6) $footer-padding;
+    background-color: colour(light-beige);
 }
 
 .newsletter__cta {
     flex: 1 1 50%;
 }
 
+.newsletter__text {
+    color: colour(content);
+    opacity: 0.8;
+}
+
 .newsletter__form {
     flex: 1 1 50%;
+    position: relative;
+    padding-left: baselines(2);
+}
+
+.newsletter__input {
+    background-color: colour(dark-beige);
+    border: 0;
+    border-bottom: 2px solid white;
+    line-height: baselines(6);
+    padding: 0;
+    width: 100%;
+    font-family: Cadiz, sans-serif;
+    font-size: font-size(p);
+    color: white;
+    padding: 0 0.5em;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &::-webkit-input-placeholder {
+        color: white;
+    }
+
+    &::-moz-placeholder {
+        color: white;
+    }
+
+    &::placeholder {
+        color: white;
+    }
+}
+
+.newsletter__submit {
+    border: 0;
+    background: 0;
+    position: absolute;
+    font-size: 0;
+    right: 0;
+    top: baselines(0.5);
+
+    &::after {
+        content: $i-arrow-right;
+        font-size: 32px;
+        display: block;
+        font-family: icomoon;
+        background-color: white;
+        border-radius: 35% / 50%;
+        width: 43px;
+        cursor: pointer;
+    }
 }

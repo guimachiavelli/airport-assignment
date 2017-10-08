@@ -3,7 +3,7 @@ $header-height: baselines(17.5);
 .site-header {
     @include background-texture;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     height: $header-height;
     top: 0;
     display: flex;
@@ -11,7 +11,7 @@ $header-height: baselines(17.5);
     justify-content: space-between;
     width: 100%;
     background-color: colour(menu);
-    box-shadow: 0 0 50px 0 colour(menu-shadow);
+    box-shadow: 0 0 25px 0 colour(menu-shadow);
 }
 
 .site-header__section--logo {

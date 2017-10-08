@@ -1,6 +1,7 @@
-$article-margin-left: percentage(106/1280);
+$article-margin-left: (106/1280) * 100vw;
 $article-header-padding-left: 40px;
 $article-content-padding-left: 63px;
+$article-paragraph-width: 670px;
 
 .article {
     margin-left: $article-margin-left;
@@ -24,6 +25,10 @@ $article-content-padding-left: 63px;
     margin-bottom: baselines(10);
 }
 
+.article__meta {
+    position: relative;
+}
+
 .article__standfirst {
     width: 700px;
     margin-bottom: baselines(9);
@@ -37,6 +42,31 @@ $article-content-padding-left: 63px;
 .article__social {
     position: absolute;
     left: $article-margin-left * -1;
+    top: 0;
+}
+
+.social-network {
+    margin-bottom: baselines(2);
+}
+
+.social-network__link {
+    opacity: 0.65;
+    display: block;
+    text-align: center;
+
+    .i {
+        font-size: 32px;
+        display: block;
+        line-height: baselines(2);
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.social-network__text {
+    font-size: font-size(social-text);
 }
 
 .article__subheading {
@@ -45,6 +75,7 @@ $article-content-padding-left: 63px;
     font-family: Value, serif;
     padding-top: baselines(5.5);
     margin-bottom: baselines(4.5);
+    padding-left: 1em;
 }
 
 .article__section {
@@ -55,8 +86,13 @@ $article-content-padding-left: 63px;
     p {
         font-size: font-size(p);
         line-height: leading(p);
-        max-width: 670px;
+        max-width: $article-paragraph-width;
         margin-bottom: baselines(3.5);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
     }
 
     h3 {
@@ -68,3 +104,51 @@ $article-content-padding-left: 63px;
         letter-spacing: 0.5px;
     }
 }
+
+.article__quote {
+    max-width: $article-paragraph-width;
+
+    p {
+        font-size: font-size(blockquote);
+        line-height: leading(blockquote);
+        color: colour(content);
+        font-family: Value, serif;
+    }
+
+    &:hover {
+        .article__quote-line::after {
+            transform: scaleX(1) translateZ(0);
+        }
+    }
+
+}
+
+.article__quote-line {
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+    padding: 0 0.25em;
+    transform: translateZ(0);
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 85%;
+        top: leading(blockquote)/8;
+        left: 0;
+        background-color: colour(light-beige);
+        z-index: -1;
+        opacity: 1;
+        transition: transform 200ms cubic-bezier(0.4, 0.0, 0.2, 1);;
+        transform: scaleX(0) translateZ(0);
+        transform-origin: 0 50%;
+    }
+
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i})::after { 
+            transition-delay: (125ms * $i);
+        }
+    }
+}
+
