@@ -10,18 +10,31 @@
     padding: baselines(5) 0;
     overflow-x: scroll;
     position: relative;
+
+    .slider--active & {
+        overflow-x: hidden;
+    }
 }
+
+
 
 .slider-items {
     height: 100%;
     white-space: nowrap;
     margin: 0 auto;
     font-size: 0;
+    transition: transform 200ms;
+
+    &.no-animation {
+        transition: none !important;
+    }
 }
 
 .slider-item {
     display: inline-block;
-    margin-right: 126px;
+    margin-right: 10%;
+    width: 33%;
+    vertical-align: middle;
 
     &:last-child {
         margin-right: 0;
@@ -43,12 +56,20 @@
     position: relative;
     transform: scale(0.85);
     opacity: 0.5;
+    width: 100%;
+    transition: transform 200ms 100ms;
 }
 
-.slider-item__image {
+.slider-item__image--vertical {
     height: 100%;
     width: auto;
 }
+
+.slider-item__image--horizontal {
+    width: 100%;
+    height: auto;
+}
+
 
 .slider-item__caption {
     white-space: normal;
