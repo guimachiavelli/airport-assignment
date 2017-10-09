@@ -50,7 +50,7 @@ $article-paragraph-width: 670px;
 }
 
 .social-network__link {
-    opacity: 0.65;
+    color: colour(dark-text);
     display: block;
     text-align: center;
 
@@ -61,7 +61,7 @@ $article-paragraph-width: 670px;
     }
 
     &:hover {
-        opacity: 0.9;
+        color: colour(white);
     }
 }
 
