@@ -14,6 +14,18 @@ $header-height: baselines(17.5);
     box-shadow: 0 0 25px 0 colour(menu-shadow);
 }
 
+.site-header--small {
+    height: $header-height/2;
+
+    .site-header__section--nav {
+        flex: 1 1 percentage(776/1280);
+    }
+
+    .site-header__section--aside {
+        flex: 1 1 percentage(225/1280);
+    }
+}
+
 .site-header__section--logo {
     flex: 1 1 percentage(233/1280);
 }

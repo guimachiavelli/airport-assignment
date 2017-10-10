@@ -1,14 +1,15 @@
 import { isElementOnScreen } from './helpers';
 
 class Reveal {
-  constructor(el) {
+  constructor(el, delay) {
     this.el = el;
-    this.hiddenStateClassName = 'article__quote--hidden';
+    this.hiddenStateClassName = 'reveal--hidden';
     this.handleScroll = this.handleScroll.bind(this);
+    this.delay = delay || 1;
   }
 
   setup() {
-    if (isElementOnScreen(this.el)) {
+    if (isElementOnScreen(this.el, 1)) {
       return;
     }
 
@@ -17,7 +18,7 @@ class Reveal {
   }
 
   handleScroll() {
-    if (!isElementOnScreen(this.el)) {
+    if (!isElementOnScreen(this.el, this.delay)) {
       return;
     }
 

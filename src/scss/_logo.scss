@@ -2,6 +2,10 @@
     background-color: rgba(colour(body), 0.5);
     height: $header-height;
     vertical-align: middle;
+
+    .site-header--small & {
+        height: $header-height/2;
+    }
 }
 
 .logo__text {
@@ -9,5 +13,9 @@
     font-family: Value, serif;
     line-height: $header-height;
     text-align: center;
-}
 
+    .site-header--small & {
+        font-size: 28px;
+        line-height: $header-height/2;
+    }
+}

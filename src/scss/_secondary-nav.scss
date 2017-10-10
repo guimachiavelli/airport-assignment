@@ -4,6 +4,11 @@
     line-height: $header-height/2;
     vertical-align: middle;
     text-align: center;
+
+    .site-header--small & {
+        float: right;
+        min-width: 115px;
+    }
 }
 
 .side-link--dark {

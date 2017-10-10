@@ -15,6 +15,10 @@ $player-padding-top: baselines(9);
     font-family: Value, serif;
     padding-left: 0.8em;
     padding-top: 0.5em;
+
+    .video--is-playing & {
+        opacity: 0;
+    }
 }
 
 .player__video {
@@ -28,13 +32,26 @@ $player-padding-top: baselines(9);
     border: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
     cursor: pointer;
+
+    &:focus {
+        outline: 0;
+    }
 
     &::after {
         content: $i-play;
         font-family: icomoon;
         font-size: 160px;
         color: #fff;
+    }
+
+    .video--is-playing & {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
     }
 }

@@ -5,6 +5,10 @@
 .nav-items {
     display: flex;
     height: $header-height;
+
+    .site-header--small & {
+        height: $header-height/2;
+    }
 }
 
 .nav-item {
@@ -39,6 +43,14 @@
     .nav-item--active & {
         border-bottom: 1px solid colour(underline);
     }
+
+    .site-header--small & {
+        font-size: font-size(menu-retracted);
+
+        &::after {
+            line-height: font-size(menu-retracted);
+        }
+    }
 }
 
 .nav-item__catchline {
@@ -48,6 +60,10 @@
     font-size: font-size(menu-catchline);
     text-transform: uppercase;
     line-height: 1;
+
+    .site-header--small & {
+        display: none;
+    }
 }
 
 

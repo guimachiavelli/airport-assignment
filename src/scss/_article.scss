@@ -144,7 +144,7 @@ $article-paragraph-width: 670px;
         }
     }
 
-    .article__quote--hidden &::after {
+    .reveal--hidden &::after {
         transform: scaleX(0) translateZ(0);
     }
 }
