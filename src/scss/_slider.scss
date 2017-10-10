@@ -16,8 +16,6 @@
     }
 }
 
-
-
 .slider-items {
     height: 100%;
     white-space: nowrap;
@@ -115,6 +113,10 @@
     display: block;
     margin-bottom: baselines(0.5);
     cursor: pointer;
+
+    &:focus {
+        outline: 0;
+    }
 
     &::after {
         content: $i-arrow-right;

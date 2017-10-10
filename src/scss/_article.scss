@@ -107,6 +107,7 @@ $article-paragraph-width: 670px;
 
 .article__quote {
     max-width: $article-paragraph-width;
+    margin-bottom: baselines(4);
 
     p {
         font-size: font-size(blockquote);
@@ -114,13 +115,6 @@ $article-paragraph-width: 670px;
         color: colour(content);
         font-family: Value, serif;
     }
-
-    &:hover {
-        .article__quote-line::after {
-            transform: scaleX(1) translateZ(0);
-        }
-    }
-
 }
 
 .article__quote-line {
@@ -128,7 +122,6 @@ $article-paragraph-width: 670px;
     white-space: nowrap;
     z-index: 1;
     padding: 0 0.25em;
-    transform: translateZ(0);
 
     &::after {
         content: '';
@@ -141,8 +134,8 @@ $article-paragraph-width: 670px;
         z-index: -1;
         opacity: 1;
         transition: transform 200ms cubic-bezier(0.4, 0.0, 0.2, 1);;
-        transform: scaleX(0) translateZ(0);
         transform-origin: 0 50%;
+        transform: scaleX(1) translateZ(0);
     }
 
     @for $i from 1 through 3 {
@@ -150,5 +143,8 @@ $article-paragraph-width: 670px;
             transition-delay: (125ms * $i);
         }
     }
-}
 
+    .article__quote--hidden &::after {
+        transform: scaleX(0) translateZ(0);
+    }
+}
