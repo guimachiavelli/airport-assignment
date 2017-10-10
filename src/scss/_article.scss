@@ -42,7 +42,7 @@ $article-paragraph-width: 670px;
 .article__social {
     position: absolute;
     left: $article-margin-left * -1;
-    top: 0;
+    top: baselines(2);
 }
 
 .social-network {
